@@ -1,14 +1,15 @@
 let button = document.getElementById('get-data');
 
+let div = document.createElement('div');
+divAtt = document.createAttribute('id');
+divAtt.value = 'dane-programisty';
+div.setAttributeNode(divAtt);
+document.body.appendChild(div);
+
 const getData = () => {
     fetch('https://akademia108.pl/kurs-front-end/ajax/1-pobierz-dane-programisty.php')
         .then(response => response.json())
         .then((data) => {
-            let div = document.createElement('div');
-            divAtt = document.createAttribute('id');
-            divAtt.value = 'dane-programisty';
-            div.setAttributeNode(divAtt);
-            document.body.appendChild(div);
 
             let nameElement = document.createElement('p');
             let lastNameElement = document.createElement('p');
