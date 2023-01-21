@@ -1,0 +1,32 @@
+#hobbies {
+    padding: 0 20px;
+    margin-bottom: 160px;
+
+    h2 {
+        margin-bottom: 50px;
+    }
+
+    .hobbies-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            flex-basis: 50%;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        img {
+            width: 50%;
+            margin-bottom: 20px;
+            opacity: 0;
+            transition: all 2s;
+        }
+
+        .show {
+            opacity: 1;
+        }
+    }
+}

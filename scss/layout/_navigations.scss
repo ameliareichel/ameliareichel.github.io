@@ -1,0 +1,48 @@
+.navigation-container {
+
+    video {
+        position: fixed;
+        top: 0;
+        z-index: -1;
+    }
+
+    .navigation {
+        padding: 0 20px;
+        position: sticky;
+        top: 40px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        .name {
+            color: #fff;
+            font-family: $main-font;
+            font-size: 24px;
+            display: inline-block;
+        }
+
+        .nav-menu-list {
+            text-align: right;
+            list-style: none;
+            display: inline-block;
+            line-height: 30px;
+
+            .nav-items {
+
+                a {
+                    text-decoration: none;
+                    font-family: $main-font;
+                    color: rgba(255, 255, 255, 0.8);
+                    font-size: 20px;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        color: rgb(249, 68, 237);
+                    }
+                }
+            }
+        }
+    }
+}
