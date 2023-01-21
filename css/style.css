@@ -44,6 +44,17 @@ p {
   background-color: #fff;
 }
 
+.scroll-top-button {
+  width: 60px;
+  position: fixed;
+  bottom: 60px;
+  right: 0;
+  rotate: -86deg;
+}
+.scroll-top-button:hover {
+  cursor: pointer;
+}
+
 article,
 aside,
 details,
@@ -310,6 +321,25 @@ table {
   color: rgb(249, 68, 237);
 }
 
+.footer-container {
+  background-color: #000;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-container p {
+  font-family: "Smooch Sans", sans-serif;
+  font-size: 20px;
+}
+.footer-container a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.footer-container a:hover {
+  text-shadow: #fff 2px 2px 10px;
+}
+
 /* Pages: */
 #about {
   margin-top: 100vh;
@@ -374,6 +404,36 @@ table {
 }
 
 #projects {
-  padding: 30px 20px;
-  background-image: linear-gradient(transparent, #000, transparent);
+  padding: 20px 0px;
+  padding-bottom: 60px;
+  background-color: #000;
+}
+#projects .projects-header {
+  padding: 0 20px;
+  text-align: right;
+}
+#projects a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+#projects a h3 {
+  padding: 0 20px;
+  margin-bottom: 5px;
+}
+#projects a:hover {
+  text-shadow: #fff 2px 2px 10px;
+}
+#projects .crypto-rate-h {
+  text-align: right;
+}
+#projects .leorei-h {
+  margin-bottom: 25px;
+}
+
+#hire-me {
+  padding: 0 20px;
+  padding-bottom: 20px;
+}
+#hire-me p .email {
+  color: rgb(249, 68, 237);
 }/*# sourceMappingURL=style.css.map */
