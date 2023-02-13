@@ -3,10 +3,6 @@ let careerDescription = document.querySelector("#career > p");
 let aboutHeader = document.querySelector("#about > h2");
 let aboutDescription = document.querySelector("#about > div > p");
 
-let gymH = document.querySelector(".gym-header");
-let codingH = document.querySelector(".coding-header");
-let artH = document.querySelector(".art-header");
-
 let gymPic = document.querySelector("#hobbies > div > img.gym-pic");
 let githubPic = document.querySelector("#hobbies > div > img.github-pic");
 let artPic = document.querySelector("#hobbies > div > img.art-pic");
@@ -25,17 +21,17 @@ const disappear = () => {
     careerSection.classList.add('disappeared');
 };
 
-const showG = () => {
-    gymPic.classList.toggle('show');
-};
+// const showG = () => {
+//     gymPic.classList.toggle('show');
+// };
 
-const showGT = () => {
-    githubPic.classList.toggle('show');
-};
+// const showGT = () => {
+//     githubPic.classList.toggle('show');
+// };
 
-const showA = () => {
-    artPic.classList.toggle('show');
-};
+// const showA = () => {
+//     artPic.classList.toggle('show');
+// };
 
 const showButton = () => {
     if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
@@ -51,10 +47,29 @@ const scrollUp = () => {
     document.documentElement.scrollTop = 0;
 };
 
-careerHeader.addEventListener('mouseover', showDesc);
-careerSection.addEventListener('wheel', disappear);
-gymH.addEventListener('mouseover', showG);
-codingH.addEventListener('mouseover', showGT);
-artH.addEventListener('mouseover', showA);
+//CUSTOM CURSOR:
+
+const cursorLED = document.querySelector('.cursor');
+
+const moveCursor = (e) => {
+    const mouseY = e.clientY;
+    const mouseX = e.clientX;
+
+    cursorLED.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+}
+
+window.addEventListener('mousemove', moveCursor);
+
+//CURSOR FOLLOWING LIGHT:
+
+let lightSpot = document.querySelector('.light-spot');
+const onMouseMove = (e) => {
+    lightSpot.style.left = e.clientX + 'px';
+    lightSpot.style.top = e.clientY + 'px';
+}
+document.addEventListener('mousemove', onMouseMove);
+
 window.addEventListener('scroll', showButton);
 scrolltopButton.addEventListener('click', scrollUp);
+careerHeader.addEventListener('mouseover', showDesc);
+careerSection.addEventListener('wheel', disappear);

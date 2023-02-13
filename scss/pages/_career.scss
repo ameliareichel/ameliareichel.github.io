@@ -1,7 +1,7 @@
 #career {
     background-image: linear-gradient(#000 85%, transparent);
     padding: 60px 20px;
-    margin-top: 600px;
+    margin-top: 300px;
     transition: all 3s;
 
     h2 {
@@ -18,6 +18,31 @@
     }
 }
 
-// #career.disappeared {
-//     opacity: 0;
-// }
+@media all and (min-width: $medium-size) {
+
+    #career {
+        padding: 60px 40px;
+
+        h2 {
+            padding: 0 40px;
+        }
+
+        p {
+            padding: 0 40px;
+        }
+    }
+}
+
+@media all and (min-width: 884px) {
+    
+    #career {
+        padding: 60px;
+    }
+}
+
+@media all and (min-width: $large-size) {
+    
+    #career {
+        padding: 60px 80px;
+    }
+}

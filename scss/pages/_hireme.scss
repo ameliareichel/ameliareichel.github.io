@@ -9,3 +9,32 @@
         }
     }
 }
+
+@media all and (min-width: $medium-size) {
+
+    #hire-me {
+        padding: 0 40px;
+
+        h2 {
+            padding: 0 40px;
+        }
+
+        p {
+            padding: 0 40px;
+        }
+    }
+}
+
+@media all and (min-width: 884px) {
+
+    #hire-me {
+        padding: 0 60px;
+    }
+}
+
+@media all and (min-width: $large-size) {
+
+    #hire-me {
+        padding: 0 80px;
+    }
+}

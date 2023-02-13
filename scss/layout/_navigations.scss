@@ -15,6 +15,7 @@
         display: flex;
         justify-content: space-between;
         align-items: baseline;
+        z-index: 20;
 
         .name {
             color: #fff;
@@ -43,6 +44,55 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media all and (min-width: $medium-size) {
+
+    .navigation-container {
+        
+        .navigation {
+            padding: 10px 40px;
+        }
+    }
+}
+
+@media all and (min-width: 884px) {
+
+    .navigation-container {
+        
+        .navigation {
+            padding: 10px 60px;
+
+            .nav-menu-list {
+                display: inline;
+
+                .nav-items {
+                    display: inline;
+                    margin: 0 15px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: $large-size) {
+    
+    .navigation-container {
+        
+        .navigation {
+            padding: 10px 80px;
+        }
+    }
+}
+
+@media all and (min-width: 1000px) {
+
+    .navigation-container {
+
+        video {
+            width: 100%;
         }
     }
 }

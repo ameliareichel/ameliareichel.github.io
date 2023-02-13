@@ -2,10 +2,26 @@
     padding: 20px 0px;
     padding-bottom: 60px;
     background-color: #000;
-    
+
     .projects-header {
         padding: 0 20px;
         text-align: right;
+    }
+
+    video {
+        transition: all 0.3s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    img {
+        transition: all 0.3s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 
     a {
@@ -28,5 +44,61 @@
 
     .leorei-h {
         margin-bottom: 25px;
+    }
+}
+
+@media all and (min-width: $medium-size) {
+
+    #projects {
+
+        .projects-header {
+            padding: 0 80px;
+        }
+
+        a {
+
+            h3 {
+                padding: 0 80px;
+            }
+        }
+
+        .leorei-h {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media all and (min-width: 884px) {
+
+    #projects {
+
+        .projects-header {
+            padding: 0 60px;
+        }
+
+        a {
+
+            h3 {
+                padding: 0 60px;
+            }
+        }
+    }
+}
+
+@media all and (min-width: $large-size) {
+
+    #projects {
+
+        .projects-header {
+            padding: 0 80px;
+        }
+
+        a {
+
+            h3 {
+                padding: 0 80px;
+                margin-bottom: 10px;
+            }
+        }
     }
 }
